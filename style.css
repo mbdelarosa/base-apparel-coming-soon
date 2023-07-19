@@ -18,7 +18,7 @@ body {
   background: var(--gradient-bg);
   display: grid;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .header {
@@ -30,7 +30,7 @@ body {
   max-width: 6.35rem;
 }
 
-.hero-section__image > picture img {
+.hero-image > picture img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -59,10 +59,6 @@ body {
   display: block;
 }
 
-.hero__text {
-  font-size: 0.9rem;
-}
-
 .input-container {
   display: flex;
   align-items: center;
@@ -82,11 +78,10 @@ body {
 .input-container__email-input {
   background-color: transparent;
   border-radius: 5rem;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   padding-inline-end: 7rem;
   border: 2px solid var(--desaturated-red-lighter);
   flex-grow: 1;
-  font-family: inherit;
   font-weight: 400;
   color: var(--dark-grayish-red);
 }
