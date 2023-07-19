@@ -76,7 +76,7 @@ body {
   width: 1px;
 }
 
-.input-container__email-input {
+.input-container__email {
   background-color: transparent;
   border-radius: 5rem;
   padding: 0.75rem 1.5rem;
@@ -87,13 +87,17 @@ body {
   color: var(--dark-grayish-red);
 }
 
-.input-container__email-input::placeholder {
+.input-container__email::placeholder {
   color: var(--desaturated-red-lighter);
 }
 
-.input-container__email-input:hover {
+.input-container__email:hover {
   transition: border-color 0.5s ease;
   border-color: var(--desaturated-red);
+}
+
+.input-container__email[aria-invalid="true"] {
+  border-color: var(--soft-red);
 }
 
 .input-container__submit-btn {
@@ -111,9 +115,18 @@ body {
 }
 
 .input-container__error {
+  visibility: hidden;
   position: absolute;
-  right: 5rem;
+  bottom: -2rem;
+  left: 1.5rem;
+  color: var(--soft-red);
 }
+
+.input-container__email[aria-invalid="true"] ~ .input-container__error {
+  visibility: visible;
+}
+
+/* right: 5rem; for icon */
 
 /*.input-container__error[data-error="false"] {
   display: none;

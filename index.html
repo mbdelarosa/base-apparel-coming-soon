@@ -39,9 +39,9 @@
           <form method="post">
             <div class="input-container">
               <label for="email-address" class="sr-only">Email Address</label>
-              <input type="email" id="email-address" name="email" placeholder="Email Address" class="input-container__email-input" required />
-              <span class="input-container__error" data-error="false">
-                <img src="images/icon-error.svg" class="input-container__error--icon" alt="Invalid email address error" />
+              <input type="email" id="email-address" name="email" placeholder="Email Address" class="input-container__email" aria-invalid="false" aria-errormessage="email-error" required />
+              <span id="email-error" class="input-container__error">
+                Please provide a valid email
               </span>
               <button type="submit" class="input-container__submit-btn">
                 <img src="images/icon-arrow.svg" class="input-container__submit-btn-icon" alt="Submit button" />
