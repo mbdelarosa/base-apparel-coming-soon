@@ -5,13 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
   <main>
-    <header>
-      <a href="#" class="logo">
+    <header class="header">
+      <a href="#" class="header__logo">
         <img src="images/logo.svg" alt="Base Apparel logo linked to homepage" />
       </a>
     </header>
@@ -25,23 +30,25 @@
       </div>
 
       <div class="hero-section__body">
-        <h1 class="hero__title">We're coming soon</h1>
+        <h1 class="hero__title">We're <span class="accent">coming soon</span></h1>
 
         <p class="hero__text">
           Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
 
-        <div class="input-container">
+        <div class="hero__form">
           <form method="post">
-            <label for="email-address">Email Address</label>
-            <input type="email" id="email-address" name="email" class="input-container__email-input" required />
-            <span class="input-container__error" data-active="false">
-              <img src="images/icon-error.svg" alt="Invalid email address error" />
-            </span>
-            <button type="submit" class="input-container__submit-btn">
-              <img src="images/icon-arrow.svg" class="input-container__submit-btn-icon" alt="Submit button" />
-            </button>
+            <div class="input-container">
+              <label for="email-address" class="sr-only">Email Address</label>
+              <input type="email" id="email-address" name="email" placeholder="Email Address" class="input-container__email-input" required />
+              <span class="input-container__error" data-error="false">
+                <img src="images/icon-error.svg" alt="Invalid email address error" />
+              </span>
+              <button type="submit" class="input-container__submit-btn">
+                <img src="images/icon-arrow.svg" class="input-container__submit-btn-icon" alt="Submit button" />
+              </button>
+            </div>
           </form>
         </div>
       </div>
