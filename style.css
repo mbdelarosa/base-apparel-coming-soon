@@ -65,6 +65,8 @@ body {
 
 .input-container {
   display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -81,6 +83,7 @@ body {
   background-color: transparent;
   border-radius: 5rem;
   padding: 1rem 1.5rem;
+  padding-inline-end: 7rem;
   border: 2px solid var(--desaturated-red-lighter);
   flex-grow: 1;
   font-family: inherit;
@@ -99,11 +102,18 @@ body {
 
 .input-container__submit-btn {
   border: none;
-  padding: 0.5rem 1.5rem;
+  padding: 0.9rem 1.75rem;
   background: var(--gradient-btn);
   border-radius: 5rem;
+  position: absolute;
+  right: 0;
 }
 
-.input-container__error[data-error="false"] {
-  display: none;
+.input-container__error {
+  position: absolute;
+  right: 5rem;
 }
+
+/*.input-container__error[data-error="false"] {
+  display: none;
+}*/
