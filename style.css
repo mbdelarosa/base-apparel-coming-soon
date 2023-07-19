@@ -1,7 +1,7 @@
 :root {
   /* Primary */
   --desaturated-red: hsl(0, 36%, 70%); /* text */
-  --desaturated-red-lighter: hsl(0, 36%, 70%, 0.5);
+  --desaturated-red-lighter: hsla(0, 36%, 80%, 0.75); /* border, shadow */
   --soft-red: hsl(0, 93%, 68%); /* warning */
 
   /* Neutral */
@@ -10,6 +10,7 @@
   /* Gradients */
   --gradient-bg: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   --gradient-btn: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --gradient-btn-lighter: linear-gradient(135deg, hsl(0, 80%, 95%), hsl(0, 74%, 82%));
 }
 
 body {
@@ -42,7 +43,7 @@ body {
   color: var(--desaturated-red);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 .hero__title {
@@ -102,6 +103,11 @@ body {
   border-radius: 5rem;
   position: absolute;
   right: 0;
+  box-shadow: 0 0.75rem 1.25rem var(--desaturated-red-lighter); /* h-offset v-offset blur spread color */
+}
+
+.input-container__submit-btn:hover {
+  background: var(--gradient-btn-lighter);
 }
 
 .input-container__error {
