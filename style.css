@@ -123,11 +123,14 @@ picture, picture > img {
   color: var(--soft-red);
 }
 
-.input-container__email[aria-invalid="true"] ~ .input-container__error {
-  visibility: visible;
+.input-container__error--icon {
+  position: absolute;
+  right: 5rem;
 }
 
-/* right: 5rem; for icon */
+.input-container__email[aria-invalid="true"] ~ .input-container__error, .error-icon {
+  visibility: visible;
+}
 
 /* Media query */
 @media only screen and (min-width: 80rem) {
@@ -182,6 +185,10 @@ picture, picture > img {
   }
 
   .input-container__email {
-    padding: ;
+    padding-inline-end: 10rem;
+  }
+
+  .input-container__error--icon {
+    right: 7rem;
   }
 }
