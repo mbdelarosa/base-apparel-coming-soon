@@ -116,7 +116,6 @@ picture, picture > img {
 }
 
 .input-container__error {
-  visibility: hidden;
   position: absolute;
   bottom: -2rem;
   left: 1.5rem;
@@ -152,8 +151,8 @@ picture, picture > img {
     grid-template-areas:
       "header aside"
       "main aside";
-    grid-template-rows: 15rem auto;
-    grid-template-columns: 65rem auto;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(2, 1fr);
     background-image: url('./images/bg-pattern-desktop.svg');
     background-size: cover;
   }

@@ -16,7 +16,7 @@
 <body>
   <header class="header">
     <a href="#" class="header__logo">
-      <img src="images/logo.svg" alt="Base Apparel logo linked to homepage" />
+      <img src="images/logo.svg" alt="Home - Base Apparel" />
     </a>
   </header>
   <aside class="hero-image" aria-label="image">
@@ -39,15 +39,13 @@
           <form id="form" method="post" novalidate>
             <div class="input-container">
               <label for="email-address" class="sr-only">Email Address</label>
-              <input type="email" id="email-address" name="email" autocomplete="on" placeholder="Email Address" class="input-container__email" aria-invalid="false" aria-describedby="email-error" required />
-              <span id="email-error" class="input-container__error error" aria-live="polite">
-                Please provide a valid email
-              </span>
+              <input type="email" id="email-address" name="email" autocomplete="email" placeholder="Email Address" class="input-container__email" aria-invalid="false" aria-describedby="email-error" required />
+              <span id="email-error" class="input-container__error" aria-live="polite"></span>
               <span class="error-icon error">
                 <img src="images/icon-error.svg" alt="" />
               </span>
               <button type="submit" class="input-container__submit-btn">
-                <img src="images/icon-arrow.svg" class="input-container__submit-btn-icon" alt="Submit button" />
+                <img src="images/icon-arrow.svg" class="input-container__submit-btn-icon" alt="Submit" />
               </button>
             </div>
           </form>
