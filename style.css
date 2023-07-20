@@ -121,14 +121,16 @@ picture, picture > img {
   bottom: -2rem;
   left: 1.5rem;
   color: var(--soft-red);
+  font-size: 0.85rem;
 }
 
-.input-container__error--icon {
+.error-icon {
+  visibility: hidden;
   position: absolute;
   right: 5rem;
 }
 
-.input-container__email[aria-invalid="true"] ~ .input-container__error, .error-icon {
+.input-container__email[aria-invalid="true"] ~ .error {
   visibility: visible;
 }
 
@@ -188,7 +190,11 @@ picture, picture > img {
     padding-inline-end: 10rem;
   }
 
-  .input-container__error--icon {
+  .input-container__error {
+    font-size: 1rem;
+  }
+
+  .error-icon {
     right: 7rem;
   }
 }
