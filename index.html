@@ -36,11 +36,11 @@
         </p>
 
         <div class="hero__form">
-          <form method="post">
+          <form id="form" method="post" novalidate>
             <div class="input-container">
               <label for="email-address" class="sr-only">Email Address</label>
-              <input type="email" id="email-address" name="email" placeholder="Email Address" class="input-container__email" aria-invalid="false" aria-errormessage="email-error" required />
-              <span id="email-error" class="input-container__error error">
+              <input type="email" id="email-address" name="email" autocomplete="on" placeholder="Email Address" class="input-container__email" aria-invalid="false" aria-describedby="email-error" required />
+              <span id="email-error" class="input-container__error error" aria-live="polite">
                 Please provide a valid email
               </span>
               <span class="error-icon error">
@@ -55,5 +55,7 @@
       </div>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
