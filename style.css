@@ -152,7 +152,6 @@ picture, picture > img {
       "header aside"
       "main aside";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: clamp(5rem, 10vw, 15rem) auto;
     background-image: url('./images/bg-pattern-desktop.svg');
     background-size: cover;
   }
@@ -166,7 +165,7 @@ picture, picture > img {
   }
 
   .hero-section__body {
-    padding: 4rem 13rem;
+    padding: 0rem 13rem;
     text-align: left;
     font-size: 1.25rem;
     gap: 2.5rem;
